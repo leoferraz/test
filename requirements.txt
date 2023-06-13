@@ -1,1 +1,4 @@
 bandit
+pytest
+pytest-mock
+

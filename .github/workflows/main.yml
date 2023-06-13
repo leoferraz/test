@@ -27,8 +27,11 @@ jobs:
     - name: Run security tests
       run: bandit -r .
 
-    - name: Run tests
+    - name: Run unit tests
       run: python -m unittest discover
+
+    - name: Run integration tests
+      run: pytest
 
     - name: Run a one-line script
       run: echo Hello, world!
